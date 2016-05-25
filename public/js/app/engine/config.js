@@ -94,11 +94,11 @@ var timeRangeStart = 0;
 var usersOnline = 0;
 
 //Conections
-var debug = false;
+var debug = true;
 
 var descClient = {};
 
-var PROD_SERVER_ENDPOINT = "ws://168.181.185.236:7666";
+var PROD_SERVER_ENDPOINT = "ws://0.0.0.0:7666";
 var LOCAL_SERVER_ENDPOINT = "ws://127.0.0.1:7666";
 
 var hechizoSelected = 0;
