@@ -150,7 +150,7 @@
         </div>
     </div>
         
-    <div class="reporte" onclick="window.open('http://foro.argentumonlineweb.com/viewforum.php?f=13','new_window')"></div>
+    <div class="reporte" onclick="window.open('http://nogl.io/forums/29-General','new_window')"></div>
     
     <div class="modalMapa">
         <div class="close_map"></div>

@@ -92,7 +92,7 @@ if (Auth::check()) {
 
                     <a href="{{ url('ranking') }}"><li class="ranking-nav">RANKING</li></a>
                     <a onclick="proximamente()"><li class="clanes">CLANES</li></a>
-                    <a href="http://foro.argentumonlineweb.com/" target="_blank"><li class="foro">FORO</li></a>
+                    <a href="http://nogl.io/" target="_blank"><li class="foro">FORO</li></a>
                 </ul>
                 <img src="{{ asset('assets/imgs/web/navbar.png') }}" alt="">
             </nav>
