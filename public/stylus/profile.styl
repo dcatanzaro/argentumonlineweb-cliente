@@ -1,0 +1,273 @@
+@import 'nib'
+
+.contentBox
+	#typeCharacters
+		display none
+		.inventary
+			width 273px
+			margin 0 auto
+			margin-top 20px
+			text-align center
+			float left
+			margin-left 151.5px
+			span
+				color #ff9000
+			.items
+				float left
+				margin-top 10px
+				.itemInventary
+					background-image url('/assets/imgs/slotInv.png')
+					width 38px
+					height 38px
+					float left
+					margin-right 1px
+					margin-bottom 1px
+					cursor pointer
+					.imageItem
+						width 32px
+						height 32px
+						margin-top 3px
+						margin-left 2px
+						background-size 32px
+		.preview
+			margin-top 20px
+			text-align center
+			span
+				color #ff9000
+				font-weight bold
+				small
+					font-weight normal
+			.contentImg
+				background #11171d
+				width 80px
+				height 100px
+				text-align center
+				border 1px solid #18222c
+				margin 0 auto
+				margin-top 10px
+				background #24313d
+				.bodyNakedImg
+					background url("/assets/bodies/bodyNaked.png")
+					background-repeat no-repeat
+					width 25px
+					height 50px
+					position absolute
+					margin-top 29px
+					margin-left 28px
+					z-index 10
+				.headImg
+					background url("/assets/heads/1.png")
+					background-repeat no-repeat
+					width 15px
+					height 30px
+					position absolute
+					z-index 12
+					margin-top 20px
+					margin-left 35px
+				.helmetImg
+					background-repeat no-repeat
+					width 20px
+					height 30px
+					position absolute
+					z-index 12
+					margin-top 8px
+					margin-left 29px
+				.bodyImg
+					position absolute
+					background url("/assets/items/animation/394.png")
+					background-repeat no-repeat
+					width 25px
+					height 50px
+					margin-top 29px
+					margin-left 28px
+					z-index 11
+				.weaponImg
+					position absolute
+					background-repeat no-repeat
+					width 25px
+					height 50px
+					margin-top 28px
+					margin-left 38px
+					z-index 13
+
+				.lines
+					background url('/assets/imgs/linesCharacterProfile.png')
+					width 120px
+					height 37px
+					position relative
+					top 32px
+					right 20px
+					z-index 1
+				
+			.head
+				float left
+				position relative
+				bottom 81px
+				left -5px
+				text-align left
+				width 180px
+				height 24px
+				p
+					margin 0
+					color #496076
+					font-size 11px
+			
+			.bodyArmor
+				float left
+				position relative
+				bottom 81px
+				left 40px
+				text-align right
+				width 180px
+				height 24px
+				p
+					margin 0
+					color #496076
+					font-size 11px
+					
+			.weapon
+				float left
+				position relative
+				bottom 45px
+				left -140px
+				text-align right
+				width 180px
+				height 24px
+				p
+					margin 0
+					color #496076
+					font-size 11px
+					
+		.est
+			float left
+			text-align center
+			margin-left 20px
+			span
+				color #ff9000
+			ul
+				list-style none
+				padding 0
+				margin 0
+				margin-top 10px
+				background #11171d
+				border 1px solid #18222c
+				width 200px
+				height 100px
+				padding 0 10px
+				overflow-y auto
+				li
+					font-size 11px
+					padding 5px 0
+					float left
+					width 100%
+					border-bottom: 1px solid #18222c;
+					.detalle
+						color #830E0E
+					span
+						color #496076
+						
+		.contentSkills
+			float left
+			margin-left 66px
+			width 206px
+			height 93px
+			text-align center
+			span
+				color #ff9000
+			.skills
+				margin-top 10px
+				background-color #0d1317
+				box-shadow 0px 0px 1px black
+				padding-bottom 10px
+				border 1px solid #1a242d
+				height 93px
+				.skill
+					width 30px
+					height 30px
+					border 1px solid #2b2b2b
+					padding 2px
+					float left
+					margin 10px
+					margin-left 12.41px
+					margin-right 0
+					margin-bottom 0
+					img
+						width 30px
+						height 30px
+						
+		.characters
+			width 100%
+			background #0d1317
+			height 60px
+			border-bottom 1px solid #1a242d
+			.character
+				width 40px
+				height 40px
+				border 1px solid #1a242d
+				float left
+				margin-top 9px
+				margin-left 9px
+				box-shadow 0px 0px 1px rgb(87, 87, 87)
+				cursor pointer
+				.bodyNakedImgCharacter
+					background url("/assets/bodies/bodyNaked.png")
+					background-repeat no-repeat
+					width 25px
+					height 16px
+					position absolute
+					margin-top 16px
+					margin-left 8px
+					z-index 10
+				.headImgCharacter
+					background url("/assets/heads/1.png")
+					background-repeat no-repeat
+					width 15px
+					height 30px
+					position absolute
+					z-index 12
+					margin-top 7px
+					margin-left 15px
+				.helmetImgCharacter
+					background-repeat no-repeat
+					width 20px
+					height 30px
+					position absolute
+					z-index 12
+					margin-top -7px
+					margin-left 9px
+				.bodyImgCharacter
+					position absolute
+					background-repeat no-repeat
+					width 25px
+					height 16px
+					margin-top 16px
+					margin-left 8px
+					z-index 11
+			.characterSelected
+				  box-shadow 0 0 5px #0085FF
+
+.statsFloat
+	display none
+	position absolute
+	background-color red
+	list-style none
+	padding 0
+	margin 0
+	background #11171d
+	border 1px solid #18222c
+	margin-top 10px
+	width 150px
+	padding 0 10px
+	overflow-y auto
+	li
+		font-size 11px
+		padding 5px 0
+		float left
+		width 100%
+		border-bottom: 1px solid #18222c;
+		&:last-child
+			border-bottom 0
+		.detalle
+			color #830E0E
+		span
+			color #496076

@@ -1,0 +1,944 @@
+@import 'nib'
+@import '_variables.styl'
+
+@font-face 
+    font-family 'Doppio One'
+    src url('/assets/fonts/DoppioOne-Regular.eot')
+    src local('☺'), url('/assets/fonts/DoppioOne-Regular.woff') format('woff'), url('/assets/fonts/DoppioOne-Regular.ttf') format('truetype'), url('/assets/fonts/DoppioOne-Regular.svg') format('svg')
+    font-weight normal
+    font-style normal
+    
+body
+    background-image url("/assets/imgs/background.png")
+    background-repeat repeat
+    -webkit-touch-callout none
+    -webkit-user-select none
+    -khtml-user-select none
+    -moz-user-select none
+    -ms-user-select none
+    user-select none
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+    margin 0
+
+.reporte
+    height 150px
+    width 43px
+    position fixed
+    top 30%
+    z-index 200
+    background-image url("../assets/imgs/feedbackButton.png")
+    background-repeat no-repeat
+    cursor pointer
+
+.modalMapa
+    position absolute
+    z-index 100
+    width 510px
+    height 720px
+    background-image url("../assets/imgs/mapa_background.png")
+    background-repeat no-repeat
+    background-size 100% 100%
+    display none
+    .close_map
+        position absolute
+        width 22px
+        height 30px
+        right 0
+        cursor pointer
+    .content_map
+        width 459px
+        height 644px
+        position relative
+        top 30px
+        left 25.5px
+        font-size 0
+        .img_map
+            position absolute
+        .tile_map
+            display inline-block
+            width 28.6875px
+            height 28.6875px
+        .mark
+            width 8px
+            height 8px
+            position absolute
+            background-color red
+            border-radius 50px
+    
+.modalInfo
+    position absolute
+    background-color red
+    list-style none
+    padding 0
+    margin 0
+    background #11171d
+    border 1px solid #18222c
+    margin-top 10px
+    width 150px
+    padding 0 10px
+    overflow-y auto
+    font-family doppio_one
+    z-index 100
+    display none
+    li
+        font-size 11px
+        padding 5px 0
+        float left
+        width 100%
+        border-bottom: 1px solid #18222c;
+        &:last-child
+            border-bottom 0
+        .detalle
+            text-align right
+            width 100px
+            color #830E0E
+        span
+            color #496076
+
+.modalControlPanel
+    width 583px
+    height 509px
+    background-image url('../assets/imgs/configuracion.png')
+    background-repeat no-repeat
+    z-index 100
+    position absolute
+    display none
+    font-family doppio_one
+    .sound
+        width 583px
+        height 110px
+        .soundButton
+            width 40px
+            height 40px
+            background-image url('../assets/imgs/soundButton.png')
+            background-repeat no-repeat
+            position relative
+            bottom 11px
+            left 152px
+            &:hover
+                cursor pointer
+    .teclas
+        width 583px
+        height 276px
+        margin-top 52px
+        font-size 0
+        .tecla
+            border 0
+            background-color rgb(15, 12, 8)
+            color white
+            height 17px
+            width 105px
+            text-align center
+            margin-left 12px
+            margin-top 33px
+            display inline-block
+        .margin_left_tecla
+            margin-left 58px
+        .default_teclas
+            width 65px
+            height 30px
+            margin-bottom 15px
+            margin-left 75px
+            cursor pointer
+            display inline-block
+        .save_cambios
+            width 70px
+            height 35px
+            margin-top 80px
+            margin-left 115px
+            cursor pointer
+            display inline-block
+        .reset_macros
+            width 65px
+            height 30px
+            margin-bottom 15px
+            margin-left 110px
+            cursor pointer
+            display inline-block
+    .closeControlPanel
+        margin-left 543px
+        width 40px
+        height 40px
+        &:hover
+            cursor pointer
+
+.modalReconnect
+    width 148px
+    height 89px
+    position absolute
+    background-image url('../assets/imgs/reconectando.gif')
+    background-repeat no-repeat
+    z-index 100
+    display none
+
+.modalMacro
+    width 178px
+    height 195px
+    background-image url('../assets/imgs/macros.png')
+    background-repeat no-repeat
+    position absolute
+    display none
+    z-index 100
+    font-family doppio_one
+    .closeMacro
+        float right
+        &:hover
+            cursor pointer
+    .guardarMacro
+        width 65px
+        height 15px
+        margin-top 2px
+        margin-left 57px
+        &:hover
+            cursor pointer
+    #keyMacro
+        text-align center
+        background transparent
+        border none
+        margin-top 16px
+        margin-left 17px
+        padding 8px
+        color white
+        width 128px
+    .img
+        width 64px
+        height 64px
+        margin-top 34px
+        margin-left 57px
+        .spell
+            display none
+            width 60px
+            height 60px
+            position relative
+            top 4px
+            margin-left 2px
+            background-size 100%
+        .item
+            display none
+            width 32px
+            height 32px
+            position relative
+            top 16px
+            margin-left 16px
+            background-size 100%
+
+.modalTrade
+    background-image url(../assets/imgs/trade.png)
+    background-repeat no-repeat
+    width 467px
+    height 415px
+    position absolute
+    z-index 100
+    display none
+    font-family doppio_one
+    .headTrade
+        float left
+        width 100%
+        height 100px
+        .imgItemTrade
+            float left
+            width 38px
+            height 38px
+            margin-left 47px
+            margin-top 33px
+            .imgItem
+                width 34px
+                height 33px
+                margin-top 3px
+                margin-left 3px
+                position absolute
+                z-index 10
+                background-repeat no-repeat
+        .titleAndGold
+            float left
+            width 350px
+            height 100px
+            color white
+            font-size 14px
+            font-size 12px
+            .titleItemTrade
+                float left
+                width 325px
+                height 16px
+                margin-top 33px
+                margin-left 6px
+                font-size 11px
+            .infoItem
+                float left
+                width 245px
+                height 16px
+                margin-top 6px
+                margin-left 6px
+            .goldItemTrade
+                float left
+                width 80px
+                height 20px
+                margin-left 18px
+                margin-top 4px
+        .closeTrade
+            float right
+            width 32px
+            height 32px
+            cursor pointer
+    .itemsTrade
+        float left
+        width 100%
+        height 225px
+        .trade
+            float left
+            width 190px
+            margin-left 29px
+            margin-top 25px
+            .slotTrade
+                cursor pointer
+                float left
+                background-image url('../assets/imgs/slotTrade.png')
+                background-repeat no-repeat
+                width 38px
+                height 38px
+                .imgItem
+                    width 34px
+                    height 33px
+                    margin-top 3px
+                    margin-left 3px
+                    position absolute
+                    z-index 10
+                    background-repeat no-repeat
+                .cant
+                    width 34px
+                    height 34px
+                    margin-top 1px
+                    margin-left 2px
+                    position absolute
+                    z-index 20
+                    font-size 10px
+                    color white
+                .equipped
+                    display none
+                    width 10px
+                    height 15px
+                    margin-top 24px
+                    margin-left 28px
+                    position absolute
+                    z-index 20
+                    font-size 11px
+                    color yellow
+            .slotTradeSelected
+                background-image url('../assets/imgs/itemSelected.png')
+                background-repeat no-repeat
+            .itemNotValid
+                background-color rgba(255, 0, 0, 0.2)
+        .inventary
+            float left
+            width 190px
+            margin-left 29px
+            margin-top 25px
+            .slotInventary
+                cursor pointer
+                float left
+                background-image url('../assets/imgs/slotTrade.png')
+                background-repeat no-repeat
+                width 38px
+                height 38px
+                .imgItem
+                    width 32px
+                    height 32px
+                    margin-top 3px
+                    margin-left 3px
+                    position absolute
+                    z-index 10
+                    background-repeat no-repeat
+                .cant
+                    width 34px
+                    height 34px
+                    margin-top 1px
+                    margin-left 2px
+                    position absolute
+                    z-index 20
+                    font-size 10px
+                    color white
+                .equipped
+                    display none
+                    width 10px
+                    height 15px
+                    margin-top 24px
+                    margin-left 28px
+                    position absolute
+                    z-index 20
+                    font-size 11px
+                    color yellow
+            .slotInventarySelected
+                background-image url('../assets/imgs/itemSelected.png')
+                background-repeat no-repeat
+            .itemNotValid
+                background-color rgba(255, 0, 0, 0.2)
+    .footerTrade
+        float left
+        width 100%
+        height 55px
+        .buttonBuy
+            float left
+            margin-left 60px
+            margin-top 21px
+            width 118px
+            height 35px
+            cursor pointer
+        .buttonLess
+            float left
+            margin-top 21px
+            width 25px
+            height 35px
+            cursor pointer
+        .buttonMore
+            float left
+            margin-top 21px
+            width 25px
+            height 35px
+            cursor pointer
+        .buttonSell
+            float left
+            margin-top 21px
+            width 118px
+            height 35px
+            cursor pointer
+        .cantTrade
+            background transparent
+            border none
+            float left
+            width 48px
+            height 17px
+            margin-top 31px
+            margin-left 6px
+            text-align center
+            color white
+                
+.cruz
+    background-image url('../assets/imgs/cruz.png')
+    background-repeat no-repeat
+    width 24px
+    height 23px
+    &:hover
+        cursor pointer
+
+.progressBar
+    width 934px
+    height 62px
+    margin 0 auto
+    .logo_tmp
+        margin 0 auto
+        margin-top 60px
+        width 418px
+        height 92px
+        background-image url('/assets/imgs/logo.png')
+        background-repeat no-repeat
+    .contentBar
+        position relative
+        width 578px
+        height 62px
+        margin 0 auto
+        margin-top 20px
+        margin-bottom 10px
+        img
+            position absolute
+    .text
+        color white
+        position relative
+        top 62px
+        font-size 16px
+        color brown
+        text-align center
+        z-index 11
+        font-family doppio_one
+    .carga
+        background-image url('/assets/imgs/loading_frame.png')
+        background-repeat no-repeat
+        width 578px
+        height 62px
+        z-index 1
+        position absolute
+    .barra
+        height 62px
+        background-image url('/assets/imgs/loading_fill.png')
+        background-repeat no-repeat
+        z-index 10
+        position absolute
+    .contBox
+        margin 0 auto
+        width 934px
+        height 408px
+        background-image url('/assets/imgs/keysandnews.png')
+        background-repeat no-repeat
+        .help
+            width 467px
+            height 300px
+            float left
+            font-family doppio_one
+            color #afa69c
+            padding-top 80px
+            p
+                padding-left 40px
+                font-size 24px
+                margin-top 5px
+                margin-bottom 5px
+                width 380px
+        .news
+            width 467px
+            height 300px
+            float left
+            font-family doppio_one
+            color #afa69c
+            padding-top 80px
+            z-index 12
+            .news_content
+                width 400px
+                padding-left 40px
+                height 300px
+                overflow-y scroll
+                z-index 13
+                .title
+                    font-size 16px
+                    margin-top 5px
+                    margin-bottom 5px
+                    text-decoration underline
+                    margin-top 20px
+                    &:first-child
+                        margin-top 0
+                p
+                    font-size 14px
+                    margin-top 5px
+                    margin-bottom 5px
+                    width 380px
+                    
+.outer
+    position absolute
+    width 100%
+    height 100%
+    display none
+    .middle
+        display table-cell
+        vertical-align middle
+        .content
+            width 963px
+            height 659px
+            background-image url("/assets/imgs/main.png")
+            background-repeat no-repeat
+            margin 0 auto
+            font-size 0
+            .content_left
+                width 580px
+                height 659px
+                display inline-block
+                vertical-align top
+                .render
+                    width 544px
+                    height 544px
+                    margin-top 24px
+                    margin-left 16px
+                    background-color black
+                    position relative
+                    #background
+                        z-index 0
+                        position absolute
+                    #foreground
+                        z-index 2
+                        position absolute
+                    #items
+                        z-index 1
+                        position absolute
+                    #characters
+                        z-index 3
+                        position absolute
+                    #techos
+                        z-index 4
+                        position absolute
+                    #textos
+                        z-index 5
+                        position absolute
+                    #mouseEvent
+                        z-index 7
+                        position absolute
+                #console
+                    width 539px
+                    height 100px
+                    background rgba(0, 0, 0, 0.5)
+                    color #FFF
+                    text-align left
+                    padding 5px 0px 0px 5px
+                    overflow-y auto
+                    font-size 12px
+                    word-wrap break-word
+                    position absolute
+                    top 439px
+                    z-index 6
+                    display none
+                    font-family doppio_one
+                #text
+                    outline-width 0
+                    position absolute
+                    margin 0px
+                    width 538px
+                    display none
+                    z-index 10
+
+                .openConsole
+                    z-index 7
+                    position absolute
+                    color white
+                    background rgba(0, 0, 0, 0.5)
+                    top 508px
+                    left 508px
+                    cursor pointer
+                    .fa-commenting
+                        padding 10px
+                        font-size 16px
+                .macros
+                    width 580px
+                    height 91px
+                    .macro
+                        width 64px
+                        height 64px
+                        margin-top 13px
+                        margin-left 22.2px
+                        display inline-block
+                        vertical-align top
+                        position relative
+                        cursor pointer
+                        .spell
+                            width 60px
+                            height 60px
+                            margin-top 3px
+                            margin-left 3px
+                            background-repeat no-repeat
+                            background-size 100%
+                        .item
+                            display none
+                            width 32px
+                            height 32px
+                            margin-top 17px
+                            margin-left 17px
+                            background-repeat no-repeat
+                            background-size 100%
+                            position absolute
+                            top 0
+                        .key
+                            color brown
+                            font-family doppio_one
+                            font-size 16px
+                            position absolute
+                            bottom 0
+            .content_right
+                width 383px
+                height 659px
+                display inline-block
+                .header 
+                    width 383px
+                    height 230px
+                    font-size 0
+                    display inline-block
+                    vertical-align top
+                    .level
+                        text-align center
+                        width 60px
+                        height 20px
+                        color brown
+                        font-family doppio_one
+                        font-size 16px
+                        margin-left 160px
+                        margin-top 23px
+                        display inline-block
+                        vertical-align top
+                        cursor default
+                    .configuration
+                        width 40px
+                        height 40px
+                        display inline-block
+                        margin-left 110px
+                        margin-top 20px
+                        cursor pointer
+                    .name
+                        width 383px
+                        height 30px
+                        color brown
+                        font-family doppio_one
+                        font-size 24px
+                        text-align center
+                        margin-top 7px
+                        cursor default
+                    .exp
+                        width 203px
+                        margin-top 3px
+                        height 22px
+                        margin-left 92px
+                        position relative
+                        .progress_bar
+                            position absolute
+                            width 203px
+                            height 22px
+                            background-image url('/assets/imgs/fullXP.png')
+                            background-repeat no-repeat
+                            background-position -20px -17px
+                        .porcentaje
+                            position absolute
+                            width 203px
+                            height 22px
+                            color brown
+                            font-family doppio_one
+                            font-size 12px
+                            text-align center
+                            margin-top 3px
+                            text-shadow 1px 1px 1px #000
+                            cursor default
+                        .num
+                            display none
+                            position absolute
+                            width 203px
+                            height 22px
+                            color brown
+                            font-family doppio_one
+                            font-size 12px
+                            text-align center
+                            margin-top 3px
+                            text-shadow 1px 1px 1px #000
+                            cursor default
+                    .buttons
+                        width 383px
+                        height 108px
+                        font-size 0
+                        .button_inv
+                            width 103px
+                            height 108px
+                            background-repeat no-repeat
+                            margin-top 10px
+                            margin-left 63px
+                            display inline-block
+                            cursor pointer
+                        .button_spell
+                            width 103px
+                            height 108px
+                            background-image url('/assets/imgs/invyhechi.png')
+                            background-repeat no-repeat
+                            background-position-x -103px
+                            margin-top 10px
+                            margin-left 52px
+                            display inline-block
+                            cursor pointer
+                .body
+                    width 383px
+                    height 200px
+                    display inline-block
+                    vertical-align top
+                    .inventary
+                        margin-top 50px
+                        margin-left 45px
+                        width 290px
+                        font-size 0
+                        .slot_inv
+                            cursor pointer
+                            width 38px
+                            height 38px
+                            background-image url('/assets/imgs/slotInv.png')
+                            background-repeat no-repeat
+                            display inline-block
+                            margin-right 4px
+                            margin-bottom 4px
+                            position relative
+                            .img_item
+                                width 32px
+                                height 32px
+                                position absolute
+                                top 3px
+                                left 3px
+                                background-size 100%
+                            .amount
+                                width 32px
+                                height 32px
+                                position absolute
+                                top 3px
+                                left 3px
+                                color white
+                                font-family doppio_one
+                                font-size 10px
+                            .equipped
+                                display none
+                                color yellow
+                                font-family doppio_one
+                                font-size 11px
+                                position absolute
+                                bottom 1px
+                                right 4px
+                        .item_selected
+                            background-image url('../assets/imgs/itemSelected.png')
+                            background-repeat no-repeat
+                        .last_slot_inv
+                            margin-right 0
+                        .itemNotValid
+                            background-color rgba(255, 0, 0, 0.2)
+                    .spell
+                            display none
+                            margin-top 45px
+                            margin-left 43px
+                            width 300px
+                            height 134px
+                            overflow-y scroll
+                            font-size 0
+                        .slot_spell
+                            cursor pointer
+                            width 64px
+                            height 64px
+                            background-image url('/assets/imgs/slotHechi.png')
+                            background-repeat no-repeat
+                            display inline-block
+                            margin-right 6px
+                            margin-bottom 6px
+                            position relative
+                            .img_spell
+                                width 60px
+                                height 60px
+                                position absolute
+                                top 2px 
+                                left 2px
+                                background-size 100%
+                        .last_slot_spell
+                            margin-right 0
+                .footer
+                    width 383px
+                    height 229px
+                    display inline-block
+                    vertical-align top
+                    font-size 0
+                    height 192px
+                    .info_map
+                        color brown
+                        font-family doppio_one
+                        font-size 14px
+                        text-shadow 1px 1px 1px #000
+                        display inline-block
+                        width 300px
+                        height 17px
+                        margin-left 40px
+                        margin-top 20px
+                        text-align center
+                        position relative
+                        .name_map
+                            width 300px
+                            height 17px
+                            position absolute
+                            cursor default
+                        .pos_map
+                            display none
+                            width 300px
+                            height 17px
+                            position absolute
+                            cursor default
+                    .left_footer
+                        display inline-block
+                        vertical-align top
+                        width 220px
+                        height 192px
+                        .hp
+                            width 126px
+                            height 20px
+                            margin-top 15px
+                            margin-left 83px
+                            display inline-block
+                            position relative
+                            .progress_bar
+                                background-image url('/assets/imgs/hp.png')
+                                background-repeat no-repeat
+                                position absolute
+                                width 126px
+                                height 20px
+                            .num
+                                position absolute
+                                width 126px
+                                height 20px
+                                color brown
+                                font-family doppio_one
+                                font-size 11px
+                                text-shadow 1px 1px 1px #000
+                                top 2px
+                                text-align center
+                                cursor default
+                        .mana
+                            width 126px
+                            height 20px
+                            margin-top 29px
+                            margin-left 82px
+                            display inline-block
+                            position relative
+                            .progress_bar
+                                background-image url('/assets/imgs/mana.png')
+                                background-repeat no-repeat
+                                position absolute
+                                width 126px
+                                height 20px
+                            .num
+                                position absolute
+                                width 126px
+                                height 20px
+                                color brown
+                                font-family doppio_one
+                                font-size 11px
+                                text-shadow 1px 1px 1px #000
+                                top 2px
+                                text-align center
+                                cursor default
+                        .gold
+                            color brown
+                            font-family doppio_one
+                            font-size 14px
+                            width 100px
+                            height 17px
+                            margin-top 21px
+                            margin-left 78px
+                            cursor default
+                        .attr
+                            width 220px
+                            height 35px
+                            font-size 0
+                            .agilidad
+                                color brown
+                                font-family doppio_one
+                                font-size 14px
+                                margin-top 13px
+                                margin-left 78px
+                                display inline-block
+                                cursor default
+                            .fuerza
+                                color brown
+                                font-family doppio_one
+                                font-size 14px
+                                margin-top 13px
+                                margin-left 40px
+                                display inline-block
+                                cursor default
+                    .right_footer
+                        display inline-block
+                        vertical-align top
+                        width 163px
+                        height 192px
+                        .minimap
+                            width 100px
+                            height 100px
+                            display inline-block
+                            vertical-align top
+                            margin-top 12px
+                            margin-left 12px
+                            background-size 100%
+                            .point_minimap
+                                width 3px
+                                height 3px
+                                background-color red
+                                position relative
+                        .buttons_map
+                            display inline-block
+                            vertical-align top
+                            width 100px
+                            height 45px
+                            margin-left 12px
+                            .open_map
+                                cursor pointer
+                                margin-left 29px
+                                width 45px
+                                height 45px

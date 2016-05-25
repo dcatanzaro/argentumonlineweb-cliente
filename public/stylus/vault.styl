@@ -1,0 +1,166 @@
+@import 'nib'
+
+.container
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+.shadow
+	.help
+		color #ff9000
+		font-size 12px
+		
+.characters
+	width 576px
+	background #0d1317
+	border-top 1px solid #1a242d
+	border-left 1px solid #1a242d
+	border-right 1px solid #1a242d
+	float left
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-top 10px
+	.inventary
+		width 273px
+		margin-left 151.5px
+		margin-bottom 30px
+		margin-top 20px
+		float left
+		text-align center
+		display none
+		.close
+			color #ff9000
+			float right
+			cursor pointer
+		span
+			color #ff9000
+		.items
+			margin-top 10px
+			float left
+			.itemInventary
+				background-image url('/assets/imgs/slotInv.png')
+				width 38px
+				height 38px
+				float left
+				margin-right 1px
+				margin-bottom 1px
+				cursor pointer
+				.imageItemInventary
+					width 32px
+					height 32px
+					margin-top 3px
+					margin-left 2px
+					background-size 32px
+	.contentCharacters
+		float left
+		width 100%
+		.character
+			width 40px
+			height 40px
+			border 1px solid #1a242d
+			float left
+			margin-top 9px
+			margin-left 9px
+			margin-bottom 9px
+			box-shadow 0px 0px 1px rgb(87, 87, 87)
+			cursor pointer
+			.bodyNakedImgCharacter
+				background url("/assets/bodies/bodyNaked.png")
+				background-repeat no-repeat
+				width 25px
+				height 16px
+				position absolute
+				margin-top 16px
+				margin-left 8px
+				z-index 10
+			.headImgCharacter
+				background url("/assets/heads/1.png")
+				background-repeat no-repeat
+				width 15px
+				height 30px
+				position absolute
+				z-index 12
+				margin-top 7px
+				margin-left 15px
+			.helmetImgCharacter
+				background-repeat no-repeat
+				width 20px
+				height 30px
+				position absolute
+				z-index 12
+				margin-top -7px
+				margin-left 9px
+			.bodyImgCharacter
+				position absolute
+				background-repeat no-repeat
+				width 25px
+				height 16px
+				margin-top 16px
+				margin-left 8px
+				z-index 11
+		.characterSelected
+			  box-shadow 0 0 5px #0085FF
+.contentBox
+	height 435px !important
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	.vault
+		width 390px
+		height 390px
+		margin 0 auto
+		margin-top 23px
+		.imageDrag
+			width 32px
+			height 32px
+			position absolute
+			display none
+		.itemVault
+			background-image url('/assets/imgs/slotInv.png')
+			width 38px
+			height 38px
+			float left
+			margin-right 1px
+			margin-bottom 1px
+			cursor pointer
+			.imageItem
+				width 32px
+				height 32px
+				margin-top 3px
+				margin-left 2px
+				background-size 32px
+				
+.statsFloat
+	position absolute
+	background-color red
+	list-style none
+	padding 0
+	margin 0
+	background #11171d
+	border 1px solid #18222c
+	margin-top 10px
+	width 150px
+	padding 0 10px
+	overflow-y auto
+	display none
+	li
+		font-size 11px
+		padding 5px 0
+		float left
+		width 100%
+		border-bottom: 1px solid #18222c;
+		&:last-child
+			border-bottom 0
+		.detalle
+			color #830E0E
+		span
+			color #496076

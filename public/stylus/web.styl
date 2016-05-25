@@ -1,0 +1,664 @@
+@import 'nib'
+
+body
+	font-family arial
+	color #333
+	margin 0
+	background-color black
+	.background
+		background-color rgb(19, 25, 32)
+		background-image url(../assets/imgs/web/background.jpg)
+		background-repeat no-repeat
+		background-position center top
+		margin 0 auto
+		footer
+			background-image url(../assets/imgs/web/footer.png)
+			background-repeat no-repeat
+			background-size 100%
+			height 44px
+			background-color rgb(11, 15, 19)
+			margin-top 120px
+			height 100px
+		.container
+			width 913px
+			height auto
+			margin auto
+			overflow hidden
+			min-height 830px
+			nav
+				width 100%
+				height 180px
+				font-family tahoma
+				img
+					position absolute
+					top 60px
+				ul
+					list-style none
+					line-height 78px
+					height 158px
+					margin 20px auto
+					padding 0
+					width 899.5px
+					z-index 1
+					position relative
+					top 40px
+					font-family arial
+					li
+						width 122px
+						float left
+						text-align center
+						color #496076
+						cursor pointer
+						margin-top 7px
+					.inicio
+						width 118px
+					.registro
+						width 126px
+					.tienda
+						width 104px
+					.jugar
+						cursor pointer
+						position relative
+						width 195px
+						height 158px
+						padding 0
+						margin 0
+						top -45px
+					.ranking-nav
+						width 100px
+					.right-bar
+						width 10px
+						margin 0
+						padding 0
+			.slider
+				height 226px
+				background-color #0b0f13
+				border-radius 5px
+				padding 3px
+				.content
+					background #11171d
+					height 226px
+					.glow
+						background-image url(../assets/imgs/web/bgslider.png)
+						width 950px
+						height 226px
+						background-repeat no-repeat
+						margin-left 22px
+						top 295px
+						position absolute
+					img
+						margin 18px
+						margin-left 28px
+						margin-top 19px
+						width 900px
+						height 198px
+			.gralinfo
+				margin-top 20px
+				width 598px
+				height 140px
+				background-color #0b0f13
+				float left
+				padding 1px
+				.shadow
+					box-shadow inset 0 0 10px #555657
+					background-image url(../assets/imgs/web/bg1.png)
+					background-repeat no-repeat
+					background-position right
+					float left
+					width 100%
+					height 140px
+					h2
+						padding 10px 10px 0px 20px
+						font-size 20px
+						color #006e2e
+						font-weight normal
+					p
+						margin 10px
+						padding-left 10px
+						color #525252
+						font-size 13px
+						width 419px
+						max-height 64px
+						overflow hidden
+						a
+							text-decoration none
+			.servidores
+				margin-top 20px
+				width 300px
+				float right
+				.svtitulo
+					background-color #11171D
+					/*background-image url(../assets/imgs/web/svimg.png)
+					background-repeat no-repeat
+					background-position right*/
+					height 40px
+					padding-top 15px
+					color #73777B
+					padding-left 20px
+					border 1px solid #080e13
+					border-radius 3px 3px 0 0
+					.servidorTxt
+						color rgb(112, 116, 119)
+						font-size 11px
+						text-shadow 1px 1px 1px black
+						font-size 11px
+					.cantUser
+						font-size 13px
+						color #424d65
+						margin-top 2px
+						text-shadow 2px 2px 8px black
+					.glow
+						background-image url(../assets/imgs/web/servidoresglow.png)
+						height 63px
+						width 272px
+						background-repeat no-repeat
+						background-position right
+						margin-right 21px
+						margin-top 10px
+						position absolute
+						top 521px
+					img
+						float left
+					p
+						margin 0
+						padding-left 40px
+						color rgb(112, 116, 119)
+						font-size 11px
+				.login
+					text-align center
+					color #496076
+					background-color #11171d
+					border-radius: 0 0 3px 3px;
+					height 175px
+					border: 1px solid #080e13;
+					border-top: 0;
+					.avatar
+						width 100px
+						height 100px
+						border 1px solid rgb(43,43,43)
+						border-radius 4px
+						padding 2px
+						margin-top 10px
+						margin-left 10px
+						float left
+						img
+							width 100px
+							height 100px
+						a
+							text-decoration none
+							font-size 12px
+							width 100px
+							text-align center
+							margin-top 5px
+							float left
+							color #496076
+							text-shadow: 1px 1px 1px #000;
+							&:hover
+								text-decoration underline
+					.name
+						float left
+						margin-top 10px
+						margin-left 10px
+						font-size 20px
+						width 172px
+						text-align left
+						color #ff9000
+						text-shadow: 1px 1px 1px #000;
+					.buttons
+						text-align left
+						margin-left 10px
+						margin-top 10px
+						width 172px
+						float left
+						a
+							text-decoration none
+							font-size 12px
+							color #496076
+							float left
+							width 174px
+							text-shadow: 1px 1px 1px #000;
+							&:hover
+								text-decoration underline
+						.price
+							float left
+							margin-top 12px
+							width 100px
+							.cont
+								float left
+								img
+									float left
+									width 13px
+									height 13px
+									padding-right 5px
+								span
+									float left
+									color #ff9000
+									font-size 12px
+					.user
+						width 149px
+						float left
+						.contentInput
+							background-color #0b0f13
+							padding 2px
+							width 134px
+							border-radius 3px
+							height 32px
+							margin-left 8px
+							input
+								width 124px
+								height 30px
+								box-shadow inset 0 0 5px 0px #555657
+								background-color #0b0f13
+								border-color #151C23
+								border none
+								color #525252
+								padding-left 10px
+						p
+							font-size 15px
+					.pass
+						width 149px
+						float left
+						.contentInput
+							background-color #0b0f13
+							padding 2px
+							width 134px
+							border-radius 3px
+							height 32px
+							margin-left 4px
+							input
+								width 124px
+								height 30px
+								box-shadow inset 0 0 5px 0px #555657
+								background-color #0b0f13
+								border-color #151C23
+								border none
+								color #525252
+								padding-left 10px
+						p
+							font-size 15px 
+					input[type="submit"]
+						padding 0
+						margin-top 19px
+						margin-right 20px
+						border none
+						background none
+						color #006e2e
+						font-size 16px
+						font-weight normal
+			.ranking
+					width 100%
+					margin-top 5px
+					.ranking-title-content
+						background #080e13
+						padding 1px
+						border-radius 2px
+						.ranking-title
+							width 100%
+							height 50px
+							line-height 50px
+							background-color #0B0F13
+							text-align center
+							color #485f73
+							box-shadow inset 0 0 10px #555657
+							h3
+								font-weight normal
+								margin 0
+								font-size 15px
+					.ranking-positions
+						width 100%
+						height auto
+						min-height 200px
+						background-color #0B0F13
+						margin-top 5px
+						box-shadow inset 0 0 10px #555657
+			.noticias-activo
+				width 596px
+				height auto
+				margin-top 20px
+				float left
+				background rgb(8, 14, 19)
+				padding 2px
+				border-radius 2px
+				.noticia-title
+					width 596px
+					height 53px
+					background-image url(../assets/imgs/web/headnews.png)
+					background-repeat no-repeat
+					font-size 14px
+					img
+						float left
+						margin 14px
+					h4	
+						float left
+						margin 0
+						color #485f73
+						font-weight normal
+						margin-top 19px
+					.expandir
+						float right
+						width 25px
+						height 11px
+						margin-top 22px
+						margin-right 20px
+						cursor pointer
+						background-image url(../assets/imgs/web/flecha.png)
+				.noticia-cuerpo
+					width 556px
+					padding 20px
+					background-color #0B0F13
+					float left
+					border-top 2px solid #111
+					box-shadow inset 0 0 10px -2px #555657
+					p
+						width 81%
+						margin 0
+						text-align justify
+						float left
+						font-size 12px
+						color #525252
+					.date
+						float right
+						width 65px
+						height 75px
+						background-color #12161C
+						border 1px solid #171e26
+						border-radius 3px
+						p
+							width 67px
+							color #9DA3B0
+							margin 0
+							margin-top 10px
+							text-align center
+						.number-date
+							font-size 24px
+							font-family shruti
+							font-weight bold
+							color #cfd6e6
+						.month-date
+							color #a5afc7
+							font-size 12px
+			.noticias
+				width 596px
+				height 53px
+				background #080e13
+				padding 2px
+				border-radius 2px
+				margin-top 5px
+				float left
+				font-size 14px
+				.content
+					background-image url(../assets/imgs/web/headnews.png)
+					height 53px
+					img
+						float left
+						margin 14px
+					h4
+						margin 0
+						padding 20px
+						padding-left 0
+						font-weight normal
+						float left
+						color #485f73
+			
+			.contentLeft
+				margin-top 20px
+				width 598px
+				background-color #0b0f13
+				float left
+				padding 1px
+				.shadow
+					box-shadow inset 0 0 10px #555657
+					float left
+					width 578px
+					padding 10px
+					h4
+						color #ff9000
+						text-align center
+						font-size 20px
+						float left
+						width 100%
+						margin-top 10px
+						margin-bottom 10px
+					.headerPerfil
+						float left
+						width 100%
+						.contentImg
+							width 80px
+							height 80px
+							border 1px solid #2b2b2b
+							border-radius 4px
+							padding 2px
+							float left
+							img
+								width 80px
+								height 80px
+						.namePerfil
+							float left
+							margin 0
+							margin-top 10px
+							margin-left 10px
+							color #ff9000
+							font-weight normal
+					.tabs
+						float left
+						width 100%
+						margin-top 10px
+						.tab
+							background-color #11171d
+							float left
+							border: 1px solid #1a242d
+							border-bottom 0
+							color #496076
+							margin-right 3px
+							cursor pointer
+							span
+								float left
+								font-size 15px
+								padding 5px 20px
+						.tabActive
+							font-weight normal	
+							.line
+								width 100%
+								float left
+								position relative
+								top 1px
+								border-bottom 1px solid #11171d
+
+					.contentBox
+						float left
+						width 576px
+						background-color #11171d
+						border 1px solid #1a242d
+						padding-bottom 15px
+						.infoPj
+							background-color #0d1317
+							width 250px
+							border 1px solid #1a242d
+							margin-top 15px
+							margin-left 15px
+							float left
+							box-shadow 0px 0px 1px black
+							padding-bottom 15px
+							.info
+								width 100%
+								font-size 13px
+								color #496076
+								margin-top 15px
+								margin-left 15px
+								float left
+						.logros
+							float left
+							color #496076
+							margin 0
+							margin-top 10px
+							margin-left 15px
+
+						.messages
+							background-color #0d1317
+							width 278px
+							border 1px solid #1a242d
+							margin-top 15px
+							margin-left 15px
+							padding-bottom 10px
+							float left
+							box-shadow 0px 0px 1px black
+							.message
+								float left
+								margin-top 10px
+								margin-left 10px
+								.avatar
+									width 30px
+									height 30px
+									border 1px solid #2b2b2b
+									padding 2px
+									float left
+									img
+										width 30px
+										height 30px
+								.user
+									float left
+									font-size 15px
+									color #496076 
+									margin-left 5px
+									width 227px
+								.time
+									float left
+									font-size 11px
+									color #496076 
+									margin-top 5px
+									margin-left 5px
+									width 227px
+								.msg
+									float left
+									color #496076 
+									font-size 14px
+									width 100%
+									margin-top 5px
+							.line
+								border-bottom 1px solid #1a242d
+								width 260px
+								margin-left 10px
+								float left
+								margin-top 15px
+								margin-bottom 5px
+								
+						.contentLogros
+							background-color #0d1317
+							width 545px
+							border 1px solid #1a242d
+							margin-top 15px
+							margin-left 15px
+							float left
+							box-shadow 0px 0px 1px black
+							padding-bottom 10px
+							.logro
+								width 40px
+								height 40px
+								border 1px solid #2b2b2b
+								padding 2px
+								float left
+								margin 10px
+								margin-left 12.41px
+								margin-right 0
+								margin-bottom 0
+								img
+									width 40px
+									height 40px
+					
+					.shop
+						.tabs
+							width 120px
+							margin-top 0
+							.tabActive
+								width 119px !important
+							.tab
+								width 118px
+								float left
+								border 1px solid #1a242d
+								border-right 0
+								margin-bottom 3px
+								margin-right 0
+								height 35px
+								span
+									padding 9px 10px
+								.line
+									height 34px
+									float right
+									border-right 1px solid #11171d
+									position relative
+									width 0
+									top 0
+									left 1px
+						.contentBox
+							width 436px
+							height 400px
+							padding 10px
+							overflow-y auto
+							.item
+								width 120px
+								height 193px
+								border 1px solid #1a242d
+								box-shadow 0 0 1px #000
+								background-color #0d1317
+								float left
+								text-align center
+								margin-left 18px
+								margin-bottom 10px
+								.name
+									color #ff9000
+									font-size 12px
+									width 100px
+									height 28px
+									float left
+									text-align center
+									margin-top 10px
+									margin-left 10px
+									margin-right 10px
+								.image
+									float left
+									width 60px
+									height 60px
+									margin 10px 29px
+									border 1px solid #2b2b2b
+									box-shadow 0 0 1px #000
+									img
+										padding 14px
+								.price
+									float left
+									margin 10px
+									width 100px
+									.cont
+										float left
+										img
+											width 13px
+											height 13px
+											padding-right 10px
+										span
+											color #ff9000
+											font-size 12px
+								.buy
+									background #11171d
+									color white
+									border 1px solid #2b2b2b
+									box-shadow 0 0 1px #000
+									border-radius 5px
+									padding 5px 15px
+									margin-bottom 10px
+									cursor pointer
+
+.ui-widget *
+	outline none
+
+@media (max-width 1575px)
+	.background
+		width auto !important
+	
+.bold
+	font-weight bold
+a
+	color #ff9000
+
+.rotate180
+	-ms-transform rotate(180deg)
+	-webkit-transform rotate(180deg)
+	transform rotate(180deg)
