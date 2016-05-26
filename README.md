@@ -33,10 +33,10 @@ DB_PASSWORD=
 ### Próximo a desarrollar
 * Documentar
 * Refactorizar
-* Eliminar RequireJS
-* Agregar Gulp
-* Eliminar Laravel y PHP
-* Crear nuevo FrontEnd con Express.JS
+* [Eliminar RequireJS](https://github.com/J-Gallo/argentumonlineweb-cliente/tree/express) - En desarrollo por [J-Gallo](https://github.com/J-Gallo)
+* [Agregar Gulp](https://github.com/J-Gallo/argentumonlineweb-cliente/tree/express) - En desarrollo por [J-Gallo](https://github.com/J-Gallo)
+* [Eliminar Laravel y PHP](https://github.com/J-Gallo/argentumonlineweb-cliente/tree/express) - En desarrollo por [J-Gallo](https://github.com/J-Gallo)
+* [Crear nuevo FrontEnd con Express.JS](https://github.com/J-Gallo/argentumonlineweb-cliente/tree/express) - En desarrollo por [J-Gallo](https://github.com/J-Gallo)
 * Agregar Service Workers
 
 ### Desarrolladores
