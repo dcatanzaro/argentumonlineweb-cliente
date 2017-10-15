@@ -9,6 +9,12 @@
 * PHP >= 5.4
 * MCrypt PHP Extension
 
+Si posee el error "ErrorException in Connector.php line 47:", asegurarse de tener habilitadas en php.ini las extensiones:
+* extension=php_mbstring.dll
+* extension=php_mysqli.dll
+* extension=php_openssl.dll
+* extension=php_pdo_mysql.dll
+
 ### Instalación
 
 Instalar Laravel
