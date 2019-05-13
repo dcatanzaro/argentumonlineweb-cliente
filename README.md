@@ -6,8 +6,8 @@
 * Modulo headers habilitado
 * Modulo expires habilitado
 * Modulo rewrite habilitado
-* PHP >= 5.4
-* MCrypt PHP Extension
+* PHP <= 7.0 && PHP >= 5.4
+* MCrypt PHP Extension (7.1+ mcrypt abandonware = http://php.net/manual/es/migration71.deprecated.php) 
 
 ### Instalación
 
