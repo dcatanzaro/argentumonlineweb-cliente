@@ -1,0 +1,7 @@
+{
+    "/": "/home",
+    "/register": "/register",
+    "/createCharacter": "/createCharacter",
+    "/ranking": "/ranking",
+    "/play": "/play"
+}

@@ -1,0 +1,268 @@
+@import "../../styles/variables.scss";
+
+nav {
+    width: 444px;
+    height: 232px;
+    font-family: tahoma;
+    background-image: url("/static/imgs/navbar2.png");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+    bottom: 70px;
+    img {
+        position: absolute;
+        top: 60px;
+    }
+    ul {
+        list-style: none;
+        line-height: 78px;
+        height: 158px;
+        margin: 20px auto;
+        padding: 0;
+        width: 899.5px;
+        z-index: 1;
+        position: relative;
+        top: 40px;
+        font-family: arial;
+        li {
+            width: 122px;
+            float: left;
+            text-align: center;
+            color: #496076;
+            cursor: pointer;
+            margin-top: 62px;
+            margin-left: 5px;
+        }
+        .inicio {
+            width: 118px;
+        }
+        .registro {
+            width: 126px;
+        }
+        .tienda {
+            width: 104px;
+        }
+        .jugar {
+            cursor: pointer;
+            position: relative;
+            width: 195px;
+            height: 158px;
+            padding: 0;
+            margin: 0;
+            top: 20px;
+            left: 5px;
+        }
+        .rankingNav {
+            width: 100px;
+        }
+        .right-bar {
+            width: 10px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        img {
+            width: 100%;
+        }
+    }
+
+    nav {
+        width: 100%;
+        background-size: 100%;
+        bottom: 30px;
+
+        ul {
+            width: 100%;
+            font-size: 0;
+
+            a {
+                font-size: 15px;
+                display: inline-block;
+                width: 33%;
+                vertical-align: top;
+                text-decoration: none;
+
+                &:first-child {
+                    text-align: left;
+                    padding-left: 25px;
+                    box-sizing: border-box;
+                }
+
+                &:last-child {
+                    text-align: right;
+                    padding-right: 15px;
+                    box-sizing: border-box;
+                }
+            }
+
+            li {
+                float: none;
+                margin-top: 32px;
+                margin-left: 0;
+                width: 100% !important;
+                text-align: inherit;
+            }
+        }
+    }
+}
+
+.modalPlay {
+    margin-left: -250px;
+    margin-top: -200px;
+    position: fixed;
+    left: 50%;
+    z-index: 15;
+    width: 500px;
+    background: #0b0f13;
+    padding: 1px;
+    display: none;
+    .shadow {
+        box-shadow: inset 0 0 10px #555657;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        width: 460px;
+        float: left;
+        .header {
+            width: 100%;
+            float: left;
+            position: relative;
+            margin-bottom: 15px;
+            p {
+                margin: 0;
+                color: #ff9000;
+                float: left;
+            }
+            .nameRoom {
+                float: left;
+                text-align: center;
+                text-decoration: underline;
+            }
+            .help {
+                width: 100%;
+                margin-top: 10px;
+                font-size: 12px;
+            }
+            .closeWindow {
+                float: right;
+                color: #ff9000;
+                cursor: pointer;
+            }
+            .selectTypeGame {
+                position: absolute;
+                button {
+                    border: none;
+                    background: #11171d;
+                    border: 1px solid #1a242d;
+                    color: #006e2e;
+                    font-size: 16px;
+                    font-weight: normal;
+                    padding: 5px 30px;
+                    cursor: pointer;
+                    text-decoration: none;
+                    outline: none;
+                }
+                .selected {
+                    border: 1px solid #006e2e;
+                    background: #1a242d;
+                }
+            }
+        }
+        .createCharacter {
+            display: none;
+            float: left;
+            width: 100%;
+            padding-top: 30px;
+            text-align: center;
+            .buttonRegister {
+                margin-top: 20px;
+                border: none;
+                background: #11171d;
+                border: 1px solid #1a242d;
+                color: #006e2e;
+                font-size: 16px;
+                font-weight: normal;
+                padding: 5px 30px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+        .contentGral {
+            font-size: 14px;
+            text-align: center;
+            float: left;
+            width: 80px;
+            margin-left: 10px;
+            margin-top: 10px;
+            .name {
+                height: 32px;
+                float: left;
+                width: 80px;
+                color: #ff9000;
+                margin-bottom: 5px;
+                word-wrap: break-word;
+            }
+            .contentImgLast {
+                margin-left: 0;
+            }
+            .contentImgA {
+                float: left;
+                background: #11171d;
+                text-align: center;
+                border: 1px solid #18222c;
+                margin: 0 auto;
+                background: #24313d;
+                cursor: pointer;
+                .bodyNakedImgA {
+                    background-repeat: no-repeat;
+                    width: 25px;
+                    height: 50px;
+                    position: absolute;
+                    margin-top: 29px;
+                    margin-left: 28px;
+                    z-index: 10;
+                }
+                .headImgA {
+                    background-repeat: no-repeat;
+                    width: 15px;
+                    height: 30px;
+                    position: absolute;
+                    z-index: 12;
+                    margin-top: 20px;
+                    margin-left: 35px;
+                }
+                .helmetImgA {
+                    background-repeat: no-repeat;
+                    width: 20px;
+                    height: 30px;
+                    position: absolute;
+                    z-index: 12;
+                    margin-top: 8px;
+                    margin-left: 29px;
+                }
+                .bodyImgA {
+                    position: absolute;
+                    background-repeat: no-repeat;
+                    width: 25px;
+                    height: 50px;
+                    margin-top: 29px;
+                    margin-left: 28px;
+                    z-index: 11;
+                }
+                .weaponImgA {
+                    position: absolute;
+                    background-repeat: no-repeat;
+                    width: 25px;
+                    height: 50px;
+                    margin-top: 28px;
+                    margin-left: 38px;
+                    z-index: 13;
+                }
+            }
+        }
+    }
+}

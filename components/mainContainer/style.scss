@@ -1,0 +1,13 @@
+.container {
+    width: 913px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    min-height: 830px;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+}

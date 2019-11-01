@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Mago",
+        "idHead": 1,
+        "idBody": 56,
+        "idShield": 0,
+        "idWeapon": 10,
+        "idHelmet": 4,
+        "idClass": 1,
+        "idRaza": 1
+    },
+    {
+        "name": "Clerigo",
+        "idHead": 1,
+        "idBody": 56,
+        "idShield": 6,
+        "idWeapon": 24,
+        "idHelmet": 6,
+        "idClass": 2,
+        "idRaza": 1
+    },
+    {
+        "name": "Guerrero",
+        "idHead": 1,
+        "idBody": 107,
+        "idShield": 6,
+        "idWeapon": 13,
+        "idHelmet": 6,
+        "idClass": 3,
+        "idRaza": 1
+    },
+    {
+        "name": "Asesino",
+        "idHead": 1,
+        "idBody": 48,
+        "idShield": 3,
+        "idWeapon": 52,
+        "idHelmet": 6,
+        "idClass": 4,
+        "idRaza": 1
+    },
+    {
+        "name": "Bardo",
+        "idHead": 1,
+        "idBody": 56,
+        "idShield": 3,
+        "idWeapon": 5,
+        "idHelmet": 1,
+        "idClass": 6,
+        "idRaza": 1
+    },
+    {
+        "name": "Paladín",
+        "idHead": 1,
+        "idBody": 107,
+        "idShield": 6,
+        "idWeapon": 13,
+        "idHelmet": 6,
+        "idClass": 8,
+        "idRaza": 1
+    },
+    {
+        "name": "Cazador",
+        "idHead": 1,
+        "idBody": 58,
+        "idShield": 3,
+        "idWeapon": 47,
+        "idHelmet": 6,
+        "idClass": 9,
+        "idRaza": 1
+    }
+]

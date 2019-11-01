@@ -1,0 +1,19 @@
+{
+    "stepAmount": "",
+    "stepMoneyDestination": "/",
+    "stepRelationshipWorks": "/money_destination",
+    "stepNationality": "/net_monthly_income",
+    "stepNetMonthlyIncome": "/relationship_works",
+    "stepPersonalData": "/nationality",
+    "stepPersonalDataName": "/nationality",
+    "stepPersonalDataEmail": "/personal_data_name",
+    "stepPersonalDataDni": "/personal_data_email",
+    "stepPersonalDataPhone": "/personal_data_dni",
+    "stepMoneyReasons": {
+        "mobile": "/personal_data_phone",
+        "desktop": "/personal_data"
+    },
+    "stepTyC": "/money_reasons",
+    "stepProductList": "/tyc",
+    "stepProduct": "/product_list"
+}
