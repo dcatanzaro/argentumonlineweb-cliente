@@ -1,6 +1,0 @@
-Sitemap: http://argentumonlineweb.com/sitemap
-
-User-agent: *
-Disallow: /shop
-Disallow: /vault
-Disallow: /play
